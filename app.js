@@ -43,6 +43,6 @@ app.use("/categories",categoryRouter);
  app.use("/payment",paymentRouter);
  app.use("/order",orderRouter);
 
-app.listen("8000", function(){
-    console.log("Server started on port 8000");  
+app.listen(5000, function(){
+    console.log("Server started on port 5000");  
 })
