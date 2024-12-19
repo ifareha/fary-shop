@@ -81,9 +81,9 @@
                     <h2 class="text-2xl font-semibold">
                         <%= key %>
                     </h2>
-                    <div class="grid grid-cols-4 gap-4 mt-4">
+                    <div class="grid grid-cols-4 mt-4">
                         <% products[key].forEach(elem=>{ %>
-                            <div class="flex flex-col items-center justify-between">
+                            <div class="flex flex-col items-center w-36 justify-between">
                                 <img src="data:image/jpg;base64, <%= elem.image.toString('base64') %>"
                                     alt="<%= elem.name %>" class="w-44 rounded">
                                 <p class="text-lg font-semibold text-center mt-2">
