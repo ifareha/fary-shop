@@ -17,9 +17,9 @@ router.post('/create', async function (req, res){
 try{
  let {name,email,password,} = req.body;
  let admin = adminModel.findOne({email : email});
- if(admin){
-    return res.status(400).send("admin already exists");
- }
+//  if(admin){
+//     return res.status(400).send("admin already exists");
+//  }
  let hash = await generateHash(password);
  let newAdmin = await adminModel.create({
     name,
